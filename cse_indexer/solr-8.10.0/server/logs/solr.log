@@ -1,0 +1,1515 @@
+2021-12-01 10:05:36.823 INFO  (main) [   ] o.e.j.u.log Logging initialized @735ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-01 10:05:36.952 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.41.v20210516; built: 2021-05-16T23:56:28.993Z; git: 98607f93c7833e7dc59489b13f3cb0a114fb9f4c; jvm 15.0.1+9-18
+2021-12-01 10:05:36.957 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/contexts/] at interval 0
+2021-12-01 10:05:37.106 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-12-01 10:05:37.112 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-12-01 10:05:37.112 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-12-01 10:05:37.113 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-12-01 10:05:37.154 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-12-01 10:05:37.156 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.0
+2021-12-01 10:05:37.157 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-12-01 10:05:37.157 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0
+2021-12-01 10:05:37.157 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-01T10:05:37.157137Z
+2021-12-01 10:05:37.165 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr
+2021-12-01 10:05:37.166 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/solr.xml
+2021-12-01 10:05:37.207 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418, but no JMX reporters were configured - adding default JMX reporter.
+2021-12-01 10:05:37.490 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-12-01 10:05:37.596 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7159a5cd[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:05:37.596 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7159a5cd[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:05:37.691 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3e15bb06[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:05:37.691 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3e15bb06[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:05:37.714 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-12-01 10:05:37.805 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-12-01 10:05:37.810 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-12-01 10:05:37.846 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:05:37.847 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:05:37.847 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:05:37.866 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr
+2021-12-01 10:05:37.899 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@73ff4fae{/solr,file:///Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr-webapp/webapp}
+2021-12-01 10:05:37.907 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4b2a01d4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-12-01 10:05:37.907 INFO  (main) [   ] o.e.j.s.Server Started @1821ms
+2021-12-01 10:05:41.172 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353141096} status=0 QTime=26
+2021-12-01 10:05:41.178 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353141097} status=0 QTime=32
+2021-12-01 10:05:41.737 INFO  (qtp932582590-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353141693} status=0 QTime=0
+2021-12-01 10:05:41.740 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353141694} status=0 QTime=3
+2021-12-01 10:05:41.963 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353141924} status=0 QTime=0
+2021-12-01 10:05:41.966 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353141925} status=0 QTime=3
+2021-12-01 10:05:42.183 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353142144} status=0 QTime=0
+2021-12-01 10:05:42.187 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353142144} status=0 QTime=3
+2021-12-01 10:05:42.411 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353142364} status=0 QTime=0
+2021-12-01 10:05:42.415 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353142365} status=0 QTime=3
+2021-12-01 10:05:42.872 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353142364} status=0 QTime=0
+2021-12-01 10:05:42.875 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353142365} status=0 QTime=2
+2021-12-01 10:05:42.883 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353142365} status=0 QTime=3
+2021-12-01 10:07:15.658 INFO  (qtp932582590-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=3
+2021-12-01 10:07:15.671 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1
+2021-12-01 10:07:15.678 INFO  (qtp932582590-25) [   x:companies] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=companies&action=STATUS&wt=json} status=0 QTime=0
+2021-12-01 10:07:15.702 INFO  (qtp932582590-18) [   x:companies] o.a.s.h.a.CoreAdminOperation core create command name=companies&action=CREATE&instanceDir=companies&wt=json
+2021-12-01 10:07:15.731 INFO  (qtp932582590-18) [   x:companies] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.0
+2021-12-01 10:07:15.753 WARN  (qtp932582590-18) [   x:companies] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-01 10:07:15.784 INFO  (qtp932582590-18) [   x:companies] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-01 10:07:16.018 INFO  (qtp932582590-18) [   x:companies] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-01 10:07:16.039 INFO  (qtp932582590-18) [   x:companies] o.a.s.c.CoreContainer Creating SolrCore 'companies' using configuration from instancedir /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies, trusted=true
+2021-12-01 10:07:16.045 INFO  (qtp932582590-18) [   x:companies] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.companies' (registry 'solr.core.companies') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:07:16.055 INFO  (qtp932582590-18) [   x:companies] o.a.s.c.SolrCore [[companies] ] Opening new SolrCore at [/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies], dataDir=[/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies/data/]
+2021-12-01 10:07:17.523 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-12-01 10:07:17.523 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-12-01 10:07:17.529 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-01 10:07:17.529 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-01 10:07:17.559 INFO  (qtp932582590-18) [   x:companies] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies/conf
+2021-12-01 10:07:17.566 INFO  (qtp932582590-18) [   x:companies] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-01 10:07:17.569 INFO  (qtp932582590-18) [   x:companies] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-01 10:07:17.576 INFO  (qtp932582590-18) [   x:companies] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-01 10:07:17.579 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1717937884447637504
+2021-12-01 10:07:17.581 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-01 10:07:17.582 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-01 10:07:17.582 INFO  (qtp932582590-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=companies&action=CREATE&instanceDir=companies&wt=json} status=0 QTime=1880
+2021-12-01 10:07:17.587 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.SolrCore [companies]  Registered new searcher autowarm time: 0 ms
+2021-12-01 10:07:23.006 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353242965} status=0 QTime=0
+2021-12-01 10:07:23.008 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353242965} status=0 QTime=1
+2021-12-01 10:07:23.012 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353242965} status=0 QTime=2
+2021-12-01 10:07:24.564 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353242965} status=0 QTime=0
+2021-12-01 10:07:24.567 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353242965} status=0 QTime=2
+2021-12-01 10:07:24.568 INFO  (qtp932582590-41) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638353244558} status=0 QTime=2
+2021-12-01 10:07:24.569 INFO  (qtp932582590-18) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638353242965&ts=1638353242965} status=503 QTime=1
+2021-12-01 10:07:24.570 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/system params={wt=json&_=1638353244557} status=0 QTime=3
+2021-12-01 10:07:24.571 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638353244557} status=0 QTime=6
+2021-12-01 10:07:27.126 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353242965} status=0 QTime=0
+2021-12-01 10:07:27.128 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353242965} status=0 QTime=1
+2021-12-01 10:07:28.273 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638353247107} hits=0 status=0 QTime=29
+2021-12-01 10:07:28.310 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353242965} status=0 QTime=0
+2021-12-01 10:07:28.312 INFO  (qtp932582590-42) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638353247107} hits=0 status=0 QTime=1
+2021-12-01 10:07:28.313 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353242965} status=0 QTime=2
+2021-12-01 10:07:37.436 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638353247107} hits=0 status=0 QTime=0
+2021-12-01 10:07:38.223 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638353247107} hits=0 status=0 QTime=0
+2021-12-01 10:07:42.981 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=100&_=1638353247107} hits=0 status=0 QTime=0
+2021-12-01 10:07:43.014 INFO  (qtp932582590-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353242965} status=0 QTime=0
+2021-12-01 10:07:43.015 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=100&_=1638353247107} hits=0 status=0 QTime=0
+2021-12-01 10:07:43.017 INFO  (qtp932582590-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353242965} status=0 QTime=2
+2021-12-01 10:09:50.615 INFO  (qtp932582590-18) [   x:companies] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies/conf/managed-schema
+2021-12-01 10:09:50.747 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.p.LogUpdateProcessorFactory [companies]  webapp=/solr path=/update/json/docs params={}{add=[3c0ed9b3-be62-4482-96ae-e415a3927b2f (1717938044919611392), 95ae8733-15c3-40ad-a48a-a243dd1e0262 (1717938044966797312), 8996a556-9907-4b90-83f3-42621e32ff8b (1717938044966797313), 744b2588-7b9b-4144-9f40-c404809a8845 (1717938044968894464), 9c63ab9f-ddc3-458e-aa57-217f385e96d6 (1717938044968894465), 6bba60c0-3d44-4586-bd40-aaa70ae13604 (1717938044969943040), 0d260da5-f138-4ed0-a5b8-4e4586520c6d (1717938044969943041), 2ee12653-e440-42f6-98de-23a58fe47da1 (1717938044970991616), af55656c-308c-4aae-9088-a8bbe9b00a5c (1717938044970991617), 0104ff0b-cd75-4e73-869b-ccd8b9b12cc2 (1717938044972040192), ... (250 adds)]} 0 235
+2021-12-01 10:09:51.003 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-01 10:09:51.007 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.SolrCore [companies]  Registered new searcher autowarm time: 3 ms
+2021-12-01 10:09:51.011 INFO  (qtp932582590-39) [   x:companies] o.a.s.u.p.LogUpdateProcessorFactory [companies]  webapp=/solr path=/update params={commit=true}{commit=} 0 259
+2021-12-01 10:09:56.867 INFO  (qtp932582590-23) [   x:companies] o.a.s.u.p.LogUpdateProcessorFactory [companies]  webapp=/solr path=/update/json/docs params={}{add=[72121515-9e6e-479a-a8b8-4898eda91bd5 (1717938051418685440), 7ba67265-3229-4f4f-ac6e-9cee53ddf74d (1717938051419734016), f8178ff2-e5fb-4208-bced-0328c57f12da (1717938051420782592), 764a5fc4-23c9-49b1-b867-407c9a711126 (1717938051420782593), c99dbf71-0c52-49a0-b418-105da0fa1dd8 (1717938051420782594), 1564735f-1e29-4139-bd1f-cd45598dc45c (1717938051420782595), 7936e357-91e5-4ec8-92be-146bf6d8c04b (1717938051421831168), 22d39035-6f83-4a81-90be-5e2f6c32d8b6 (1717938051421831169), 11617ae9-5c3f-494b-976d-e8a78841db1c (1717938051421831170), 46ee6db0-0077-4bb4-9a2e-ab847b917dcd (1717938051421831171), ... (319 adds)]} 0 53
+2021-12-01 10:09:56.992 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-01 10:09:56.995 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.SolrCore [companies]  Registered new searcher autowarm time: 0 ms
+2021-12-01 10:09:56.996 INFO  (qtp932582590-18) [   x:companies] o.a.s.u.p.LogUpdateProcessorFactory [companies]  webapp=/solr path=/update params={commit=true}{commit=} 0 125
+2021-12-01 10:10:01.564 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353401487} status=0 QTime=0
+2021-12-01 10:10:01.567 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353401487} status=0 QTime=2
+2021-12-01 10:10:01.570 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=100&_=1638353401546} hits=569 status=0 QTime=4
+2021-12-01 10:11:29.556 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&wt=json} hits=1 status=0 QTime=8
+2021-12-01 10:11:37.493 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watceh&indent=true&q.op=OR&rows=100&wt=json} hits=0 status=0 QTime=0
+2021-12-01 10:11:44.833 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&wt=json} hits=1 status=0 QTime=0
+2021-12-01 10:12:08.517 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&wt=json} hits=1 status=0 QTime=0
+2021-12-01 10:12:43.318 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&wt=json} hits=1 status=0 QTime=0
+2021-12-01 10:13:20.632 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&wt=json} hits=1 status=0 QTime=0
+2021-12-01 10:13:56.662 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&wt=json} hits=1 status=0 QTime=0
+2021-12-01 10:17:17.214 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=100&_=1638353401546} hits=569 status=0 QTime=0
+2021-12-01 10:17:27.810 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={indent=true&q.op=OR&rows=100&_=1638353401546} hits=0 status=0 QTime=0
+2021-12-01 10:17:27.862 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353401487} status=0 QTime=0
+2021-12-01 10:17:27.866 INFO  (qtp932582590-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353401487} status=0 QTime=2
+2021-12-01 10:17:28.990 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=100&_=1638353401546} hits=569 status=0 QTime=0
+2021-12-01 10:17:29.076 INFO  (qtp932582590-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353401487} status=0 QTime=0
+2021-12-01 10:17:29.078 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=100&_=1638353401546} hits=569 status=0 QTime=0
+2021-12-01 10:17:29.079 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353401487} status=0 QTime=1
+2021-12-01 10:17:48.701 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=watches&indent=true&q.op=OR&rows=100&_=1638353401546} hits=0 status=0 QTime=1
+2021-12-01 10:17:48.737 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353401487} status=0 QTime=0
+2021-12-01 10:17:48.738 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=watches&indent=true&q.op=OR&rows=100&_=1638353401546} hits=0 status=0 QTime=0
+2021-12-01 10:17:48.740 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353401487} status=0 QTime=2
+2021-12-01 10:18:06.205 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&_=1638353401546} hits=1 status=0 QTime=0
+2021-12-01 10:18:06.237 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353401487} status=0 QTime=0
+2021-12-01 10:18:06.238 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100&_=1638353401546} hits=1 status=0 QTime=0
+2021-12-01 10:18:06.240 INFO  (qtp932582590-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353401487} status=0 QTime=3
+2021-12-01 10:20:54.273 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 10:21:07.520 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 10:21:37.673 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:22:06.052 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:q&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=1
+2021-12-01 10:22:07.974 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:22:10.440 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:29:46.716 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:31:36.570 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:32:29.746 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:33:05.748 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:35:13.191 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:35:14.494 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:35:15.530 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:35:16.349 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:36:43.785 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:36:47.270 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:36:48.556 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:36:50.209 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:36:51.199 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:17.759 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:18.998 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:34.815 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:36.389 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:38.516 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:47.201 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:48.101 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:48.866 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:49.452 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:49.934 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:45:50.879 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:48:07.297 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:48:50.574 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:48:52.768 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:50:01.111 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:50:02.236 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:e&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:50:04.249 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:50:09.188 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:11.066 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:12.122 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:12.876 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:13.515 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:14.056 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:14.743 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:53:15.914 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:55:40.103 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:55:41.307 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:55:42.814 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:55:43.748 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:55:45.794 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:57:14.260 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:59:46.948 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 10:59:59.920 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:00:25.114 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:02:04.770 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:12:21.138 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=1
+2021-12-01 11:12:29.320 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:15:14.638 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:15:22.998 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=1
+2021-12-01 11:15:45.363 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:16:03.965 ERROR (qtp932582590-40) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 53 more
+
+2021-12-01 11:16:03.965 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:&indent=true&q.op=OR&rows=100} status=400 QTime=1
+2021-12-01 11:18:05.389 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:19:14.292 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:19:18.097 ERROR (qtp932582590-47) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 53 more
+
+2021-12-01 11:19:18.097 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:&indent=true&q.op=OR&rows=100} status=400 QTime=1
+2021-12-01 11:19:28.906 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:19:31.609 ERROR (qtp932582590-47) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 53 more
+
+2021-12-01 11:19:31.609 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:&indent=true&q.op=OR&rows=100} status=400 QTime=0
+2021-12-01 11:20:03.162 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w+&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:20:06.381 ERROR (qtp932582590-47) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 53 more
+
+2021-12-01 11:20:06.381 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:&indent=true&q.op=OR&rows=100} status=400 QTime=0
+2021-12-01 11:20:15.220 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:20:45.442 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:21:11.114 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:21:48.297 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:22:07.271 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:w+&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:26:07.458 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:26:27.011 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:26:31.331 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=0
+2021-12-01 11:26:34.448 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:26:43.544 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:26:46.202 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=0
+2021-12-01 11:26:54.035 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:we+a&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=7
+2021-12-01 11:26:56.395 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:we+a+s+&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=1
+2021-12-01 11:27:00.102 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:are&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:27:05.441 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=0
+2021-12-01 11:27:21.847 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:27:23.360 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watchet&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:27:25.336 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:27:27.516 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watchesa&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:27:28.706 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:29:29.663 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:29:46.835 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watche&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:29:54.113 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:29:57.016 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:30:18.827 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:30:20.983 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:30:22.681 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:30:24.041 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:30:26.231 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:31:28.726 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:32:59.402 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcheds&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:33:00.757 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:39:16.331 ERROR (qtp932582590-25) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 45 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 48 more
+
+2021-12-01 11:39:16.331 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:&indent=true&q.op=OR} status=400 QTime=1
+2021-12-01 11:42:39.300 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:44:59.337 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:45:12.545 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:45:22.466 ERROR (qtp932582590-47) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name: ': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name: ': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 53 more
+
+2021-12-01 11:45:22.466 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+&indent=true&q.op=OR&rows=100} status=400 QTime=0
+2021-12-01 11:45:44.742 ERROR (qtp932582590-22) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name: ': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name: ': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 53 more
+
+2021-12-01 11:45:44.742 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+&indent=true&q.op=OR&rows=100} status=400 QTime=0
+2021-12-01 11:46:02.912 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+e&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:46:10.771 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:46:13.298 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:46:14.898 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:46:16.255 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watchere&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:47:41.648 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:47:45.849 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:49:07.205 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:49:08.943 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:49:19.221 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:49:20.481 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watcher&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-01 11:49:22.589 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 11:50:17.001 INFO  (qtp932582590-47) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:*&indent=true&q.op=OR&rows=100} hits=569 status=0 QTime=2
+2021-12-01 16:21:12.627 INFO  (qtp932582590-56) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=1
+2021-12-01 16:21:51.751 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 16:22:49.595 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:We&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-01 16:25:00.060 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=0
+2021-12-02 09:34:49.182 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638437689126} status=0 QTime=5
+2021-12-02 09:34:49.200 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638437689126} status=0 QTime=24
+2021-12-02 09:34:49.205 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638437689126} status=0 QTime=2
+2021-12-02 09:34:51.644 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638437689126} status=0 QTime=0
+2021-12-02 09:34:51.647 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638437689126} status=0 QTime=2
+2021-12-02 09:34:51.652 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638437689126&ts=1638437689126} status=503 QTime=1
+2021-12-02 09:34:51.652 INFO  (qtp932582590-40) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/system params={wt=json&_=1638437691640} status=0 QTime=5
+2021-12-02 09:34:51.653 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638437691640} status=0 QTime=4
+2021-12-02 09:34:51.655 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638437691640} status=0 QTime=6
+2021-12-02 09:34:52.986 INFO  (qtp932582590-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638437689126} status=0 QTime=0
+2021-12-02 09:34:52.987 INFO  (qtp932582590-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638437689126} status=0 QTime=1
+2021-12-02 09:34:54.888 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638437692969} hits=569 status=0 QTime=5
+2021-12-02 09:34:54.922 INFO  (qtp932582590-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638437689126} status=0 QTime=0
+2021-12-02 09:34:54.923 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638437692969} hits=569 status=0 QTime=0
+2021-12-02 09:34:54.925 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638437689126} status=0 QTime=2
+2021-12-02 09:52:53.627 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=4
+2021-12-02 09:52:56.455 INFO  (qtp932582590-56) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=0
+2021-12-02 09:52:59.071 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:We&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=0
+2021-12-02 09:53:01.765 INFO  (qtp932582590-56) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:W&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-02 09:53:11.162 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:We+watches&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=8
+2021-12-02 10:02:11.690 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=0
+2021-12-02 10:09:00.349 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Not+found&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-02 10:09:03.765 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Not&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-02 21:16:31.033 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&rows=100} hits=17 status=0 QTime=1
+2021-12-02 21:16:46.143 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-02 21:17:38.119 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:17:38.122 INFO  (qtp932582590-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=3
+2021-12-02 21:17:38.128 INFO  (qtp932582590-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=1
+2021-12-02 21:17:39.713 INFO  (qtp932582590-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:17:39.715 INFO  (qtp932582590-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=1
+2021-12-02 21:17:39.715 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638479859708} status=0 QTime=1
+2021-12-02 21:17:39.717 INFO  (qtp932582590-61) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638479859709} status=0 QTime=2
+2021-12-02 21:17:39.718 INFO  (qtp932582590-60) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638479858068&ts=1638479858068} status=503 QTime=0
+2021-12-02 21:17:39.719 INFO  (qtp932582590-51) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/system params={wt=json&_=1638479859708} status=0 QTime=3
+2021-12-02 21:17:41.389 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:17:41.391 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=1
+2021-12-02 21:17:49.261 INFO  (qtp932582590-60) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&_=1638479861373} hits=17 status=0 QTime=0
+2021-12-02 21:17:49.294 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:17:49.295 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group&indent=true&q.op=OR&_=1638479861373} hits=17 status=0 QTime=0
+2021-12-02 21:17:49.297 INFO  (qtp932582590-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:17:54.840 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*&indent=true&q.op=OR&_=1638479861373} hits=24 status=0 QTime=38
+2021-12-02 21:17:54.872 INFO  (qtp932582590-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:17:54.874 INFO  (qtp932582590-60) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*&indent=true&q.op=OR&_=1638479861373} hits=24 status=0 QTime=1
+2021-12-02 21:17:54.875 INFO  (qtp932582590-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:18:21.969 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=24 status=0 QTime=2
+2021-12-02 21:18:22.006 INFO  (qtp932582590-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:18:22.008 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=24 status=0 QTime=0
+2021-12-02 21:18:22.009 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=3
+2021-12-02 21:19:37.780 INFO  (qtp932582590-48) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*&indent=true&q.op=OR&rows=100} hits=24 status=0 QTime=0
+2021-12-02 21:19:42.102 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:M*&indent=true&q.op=OR&rows=100} hits=74 status=0 QTime=8
+2021-12-02 21:19:43.879 INFO  (qtp932582590-61) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Mc*&indent=true&q.op=OR&rows=100} hits=6 status=0 QTime=1
+2021-12-02 21:19:52.969 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:McDonald*&indent=true&q.op=OR&rows=100} hits=5 status=0 QTime=1
+2021-12-02 21:19:54.780 INFO  (qtp932582590-61) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:McDonald's*&indent=true&q.op=OR&rows=100} hits=5 status=0 QTime=1
+2021-12-02 21:19:57.396 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:**&indent=true&q.op=OR&rows=100} hits=569 status=0 QTime=19
+2021-12-02 21:20:12.620 INFO  (qtp932582590-61) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group*&indent=true&q.op=OR&rows=100} hits=18 status=0 QTime=1
+2021-12-02 21:20:32.891 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Groupon*&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=2
+2021-12-02 21:21:00.757 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:United+States*&indent=true&q.op=OR&rows=100} hits=3 status=0 QTime=2
+2021-12-02 21:21:17.361 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Sneakers*&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-02 21:21:19.554 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Foot*&indent=true&q.op=OR&rows=100} hits=4 status=0 QTime=1
+2021-12-02 21:21:29.577 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Mc*&indent=true&q.op=OR&rows=100} hits=6 status=0 QTime=0
+2021-12-02 21:21:34.681 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:G*&indent=true&q.op=OR&rows=100} hits=67 status=0 QTime=2
+2021-12-02 21:21:47.464 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*&indent=true&q.op=OR&rows=100} hits=24 status=0 QTime=0
+2021-12-02 21:22:19.453 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:A*&indent=true&q.op=OR&rows=100} hits=110 status=0 QTime=1
+2021-12-02 21:22:43.957 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Food*&indent=true&q.op=OR&rows=100} hits=1 status=0 QTime=1
+2021-12-02 21:22:50.246 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Manufacturing*&indent=true&q.op=OR&rows=100} hits=0 status=0 QTime=0
+2021-12-02 21:23:17.798 INFO  (qtp932582590-63) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*+%0acountry:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=76 status=0 QTime=4
+2021-12-02 21:23:17.882 INFO  (qtp932582590-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:23:17.884 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Gr*+%0acountry:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=76 status=0 QTime=0
+2021-12-02 21:23:17.886 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:23:33.209 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group%0acountry:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=69 status=0 QTime=2
+2021-12-02 21:23:33.278 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:23:33.280 INFO  (qtp932582590-63) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group%0acountry:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=69 status=0 QTime=0
+2021-12-02 21:23:33.281 INFO  (qtp932582590-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:23:47.598 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=53 status=0 QTime=1
+2021-12-02 21:23:47.647 INFO  (qtp932582590-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:23:47.649 INFO  (qtp932582590-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=1
+2021-12-02 21:23:47.649 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=53 status=0 QTime=0
+2021-12-02 21:26:01.158 ERROR (qtp932582590-61) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'rating', pos=6
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:189)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-12-02 21:26:01.161 INFO  (qtp932582590-61) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating&rows=100&_=1638479861373} status=400 QTime=9
+2021-12-02 21:26:01.191 INFO  (qtp932582590-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:26:01.193 ERROR (qtp932582590-39) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'rating', pos=6
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:189)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-12-02 21:26:01.193 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating&rows=100&_=1638479861373} status=400 QTime=1
+2021-12-02 21:26:01.195 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=3
+2021-12-02 21:26:12.063 INFO  (qtp932582590-62) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=53 status=0 QTime=0
+2021-12-02 21:26:12.112 INFO  (qtp932582590-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:26:12.113 INFO  (qtp932582590-61) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=53 status=0 QTime=0
+2021-12-02 21:26:12.114 INFO  (qtp932582590-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:28:36.305 ERROR (qtp932582590-66) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'def(rating,0)', pos=13
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:189)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-12-02 21:28:36.305 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=def(rating,0)&rows=100&_=1638479861373} status=400 QTime=2
+2021-12-02 21:28:36.333 INFO  (qtp932582590-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:28:36.336 ERROR (qtp932582590-19) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'def(rating,0)', pos=13
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:189)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-12-02 21:28:36.336 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=def(rating,0)&rows=100&_=1638479861373} status=400 QTime=1
+2021-12-02 21:28:36.336 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:28:48.064 INFO  (qtp932582590-67) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=53 status=0 QTime=0
+2021-12-02 21:28:48.112 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:28:48.113 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&rows=100&_=1638479861373} hits=53 status=0 QTime=0
+2021-12-02 21:28:48.114 INFO  (qtp932582590-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:30:40.415 ERROR (qtp932582590-69) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'rating decs', pos=6
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:189)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-12-02 21:30:40.415 INFO  (qtp932582590-69) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating+decs&rows=100&_=1638479861373} status=400 QTime=1
+2021-12-02 21:30:40.443 INFO  (qtp932582590-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:30:40.445 ERROR (qtp932582590-67) [   x:companies] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'rating decs', pos=6
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:189)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-12-02 21:30:40.445 INFO  (qtp932582590-67) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating+decs&rows=100&_=1638479861373} status=400 QTime=0
+2021-12-02 21:30:40.446 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:30:43.046 INFO  (qtp932582590-68) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating+desc&rows=100&_=1638479861373} hits=53 status=0 QTime=18
+2021-12-02 21:30:43.089 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:30:43.090 INFO  (qtp932582590-69) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating+desc&rows=100&_=1638479861373} hits=53 status=0 QTime=0
+2021-12-02 21:30:43.091 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:30:48.308 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=country:+Switzerland*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=53 status=0 QTime=0
+2021-12-02 21:30:59.310 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+Group&indent=true&q.op=OR&sort=rating+desc&rows=100&_=1638479861373} hits=17 status=0 QTime=1
+2021-12-02 21:30:59.347 INFO  (qtp932582590-69) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638479858067} status=0 QTime=0
+2021-12-02 21:30:59.348 INFO  (qtp932582590-68) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+Group&indent=true&q.op=OR&sort=rating+desc&rows=100&_=1638479861373} hits=17 status=0 QTime=0
+2021-12-02 21:30:59.349 INFO  (qtp932582590-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638479858068} status=0 QTime=2
+2021-12-02 21:32:01.869 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=569 status=0 QTime=1
+2021-12-02 21:32:19.083 INFO  (qtp932582590-67) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=18 status=0 QTime=1
+2021-12-02 21:32:33.590 INFO  (qtp932582590-58) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:A*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=110 status=0 QTime=1
+2021-12-02 21:33:23.586 INFO  (qtp932582590-67) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Foot*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=4 status=0 QTime=0
+2021-12-02 21:35:52.055 INFO  (qtp932582590-62) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:R*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=51 status=0 QTime=2
+2021-12-02 21:38:55.016 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=18 status=0 QTime=0
+2021-12-02 21:39:04.550 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Car*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=3 status=0 QTime=1
+2021-12-02 21:39:11.063 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Por*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=0 status=0 QTime=0
+2021-12-02 21:39:13.149 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:P*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=67 status=0 QTime=2
+2021-12-02 21:39:25.790 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Philip*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=4 status=0 QTime=1
+2021-12-02 21:39:30.927 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=18 status=0 QTime=0
+2021-12-02 21:40:09.319 INFO  (qtp932582590-39) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:watches*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=1 status=0 QTime=0
+2021-12-02 21:40:16.504 INFO  (qtp932582590-66) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=18 status=0 QTime=0
+2021-12-02 21:46:28.449 INFO  (qtp932582590-71) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:T*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=51 status=0 QTime=1
+2021-12-02 21:48:38.781 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Z*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=3 status=0 QTime=1
+2021-12-02 21:49:17.131 INFO  (qtp932582590-65) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Foot+Locker*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=4 status=0 QTime=1
+2021-12-02 21:49:47.069 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Straumann+Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=1 status=0 QTime=1
+2021-12-02 21:50:00.309 INFO  (qtp932582590-65) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Groupon*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=1 status=0 QTime=0
+2021-12-02 21:51:09.181 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Milan*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=0 status=0 QTime=0
+2021-12-02 21:51:21.854 INFO  (qtp932582590-65) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:P*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=67 status=0 QTime=0
+2021-12-02 21:51:34.202 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Procter*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=4 status=0 QTime=1
+2021-12-03 09:37:13.581 INFO  (qtp932582590-71) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=569 status=0 QTime=0
+2021-12-03 11:00:59.921 INFO  (qtp932582590-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638529259863} status=0 QTime=0
+2021-12-03 11:00:59.924 INFO  (qtp932582590-72) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638529259863} status=0 QTime=3
+2021-12-03 11:00:59.931 INFO  (qtp932582590-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638529259863} status=0 QTime=2
+2021-12-03 11:04:30.432 INFO  (qtp932582590-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638529259863} status=0 QTime=0
+2021-12-03 11:04:30.435 INFO  (qtp932582590-72) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638529259863} status=0 QTime=2
+2021-12-03 11:04:30.436 INFO  (qtp932582590-65) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638529470426} status=0 QTime=0
+2021-12-03 11:04:30.438 INFO  (qtp932582590-74) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638529470427} status=0 QTime=1
+2021-12-03 11:04:30.438 INFO  (qtp932582590-70) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638529259863&ts=1638529259863} status=503 QTime=0
+2021-12-03 11:04:30.439 INFO  (qtp932582590-73) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/system params={wt=json&_=1638529470427} status=0 QTime=3
+2021-12-03 11:04:32.590 INFO  (qtp932582590-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638529259863} status=0 QTime=0
+2021-12-03 11:04:32.592 INFO  (qtp932582590-73) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638529259863} status=0 QTime=1
+2021-12-03 11:04:33.920 INFO  (qtp932582590-70) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638529472571} hits=569 status=0 QTime=0
+2021-12-03 11:04:33.952 INFO  (qtp932582590-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638529259863} status=0 QTime=0
+2021-12-03 11:04:33.954 INFO  (qtp932582590-73) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638529472571} hits=569 status=0 QTime=0
+2021-12-03 11:04:33.955 INFO  (qtp932582590-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638529259863} status=0 QTime=2
+2021-12-03 11:04:54.395 INFO  (qtp932582590-74) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+*&indent=true&q.op=OR&sort=rating+desc&rows=100&_=1638529472571} hits=569 status=0 QTime=0
+2021-12-03 11:04:54.497 INFO  (qtp932582590-78) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638529259863} status=0 QTime=0
+2021-12-03 11:04:54.498 INFO  (qtp932582590-70) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:+*&indent=true&q.op=OR&sort=rating+desc&rows=100&_=1638529472571} hits=569 status=0 QTime=0
+2021-12-03 11:04:54.499 INFO  (qtp932582590-61) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638529259863} status=0 QTime=1
+2021-12-03 12:26:08.832 INFO  (qtp932582590-70) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:M*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=74 status=0 QTime=2
+2021-12-03 12:26:32.122 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Foot+Locker*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=4 status=0 QTime=0
+2021-12-03 12:27:47.904 INFO  (qtp932582590-81) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Straumann+Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=1 status=0 QTime=1
+2021-12-03 12:28:55.856 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Groupon*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=1 status=0 QTime=0
+2021-12-03 12:29:25.885 INFO  (qtp932582590-81) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Straumann+Group*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=1 status=0 QTime=0
+2021-12-03 12:30:11.879 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:Product*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=0 status=0 QTime=0
+2021-12-03 12:30:16.429 INFO  (qtp932582590-81) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:G*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=67 status=0 QTime=1
+2021-12-03 12:32:15.162 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/select params={q=name:1*&indent=true&q.op=OR&sort=rating+desc&rows=100} hits=0 status=0 QTime=0

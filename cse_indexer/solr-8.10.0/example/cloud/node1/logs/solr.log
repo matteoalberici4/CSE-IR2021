@@ -1,0 +1,504 @@
+2021-11-24 11:52:38.480 INFO  (main) [   ] o.e.j.u.log Logging initialized @690ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-11-24 11:52:38.627 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.41.v20210516; built: 2021-05-16T23:56:28.993Z; git: 98607f93c7833e7dc59489b13f3cb0a114fb9f4c; jvm 15.0.1+9-18
+2021-11-24 11:52:38.633 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/server/contexts/] at interval 0
+2021-11-24 11:52:38.794 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-11-24 11:52:38.800 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-11-24 11:52:38.800 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-11-24 11:52:38.801 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-11-24 11:52:38.842 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-11-24 11:52:38.845 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.0
+2021-11-24 11:52:38.845 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2021-11-24 11:52:38.845 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0
+2021-11-24 11:52:38.845 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-11-24T11:52:38.845618Z
+2021-11-24 11:52:38.854 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/example/cloud/node1/solr
+2021-11-24 11:52:38.855 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/example/cloud/node1/solr/solr.xml
+2021-11-24 11:52:38.901 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418, but no JMX reporters were configured - adding default JMX reporter.
+2021-11-24 11:52:39.223 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-11-24 11:52:39.336 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@42210be1[provider=null,keyStore=null,trustStore=null]
+2021-11-24 11:52:39.336 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@42210be1[provider=null,keyStore=null,trustStore=null]
+2021-11-24 11:52:39.437 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@27b45ea[provider=null,keyStore=null,trustStore=null]
+2021-11-24 11:52:39.438 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@27b45ea[provider=null,keyStore=null,trustStore=null]
+2021-11-24 11:52:39.475 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/example/cloud/node1/solr/zoo.cfg
+2021-11-24 11:52:39.477 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2021-11-24 11:52:39.477 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2021-11-24 11:52:39.529 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2021-11-24 11:52:39.979 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2021-11-24 11:52:40.004 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-11-24 11:52:40.067 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-11-24 11:52:40.067 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-11-24 11:52:40.093 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2021-11-24 11:52:40.101 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (2)
+2021-11-24 11:52:40.154 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.1.57:8983_solr as DOWN
+2021-11-24 11:52:40.184 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-11-24 11:52:40.191 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.57:8983_solr
+2021-11-24 11:52:40.227 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+2021-11-24 11:52:40.257 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-11-24 11:52:40.264 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-11-24 11:52:40.410 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-11-24 11:52:40.456 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-11-24 11:52:40.456 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-11-24 11:52:40.457 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-11-24 11:52:40.480 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/example/cloud/node1/solr
+2021-11-24 11:52:40.480 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [companies_shard1_replica_n1]
+2021-11-24 11:52:40.512 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.0
+2021-11-24 11:52:40.529 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@73ff4fae{/solr,file:///Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/server/solr-webapp/webapp}
+2021-11-24 11:52:40.533 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-24 11:52:40.535 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4b2a01d4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-24 11:52:40.535 INFO  (main) [   ] o.e.j.s.Server Started @2747ms
+2021-11-24 11:52:40.568 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-24 11:52:40.762 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-24 11:52:40.762 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-24 11:52:40.762 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-24 11:52:40.762 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-24 11:52:40.762 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-24 11:52:40.880 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-24 11:52:42.737 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=18
+2021-11-24 11:52:42.779 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=4
+2021-11-24 11:52:45.034 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+2021-11-24 11:52:56.081 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=list&wt=json} status=0 QTime=1
+2021-11-24 11:52:58.404 ERROR (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.1.57:8984/solr/companies/config with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.57:8984 [/192.168.1.57] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 41 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 51 more
+
+2021-11-24 11:53:10.616 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (2)
+2021-11-24 11:53:10.616 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.1.57:8983_solr
+2021-11-24 11:53:10.693 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72063332435951616-192.168.1.57:8983_solr-n_0000000004) starting
+2021-11-24 11:53:10.795 INFO  (OverseerStateUpdate-72063332435951616-192.168.1.57:8983_solr-n_0000000004) [   ] o.a.s.c.Overseer Starting to work on the main queue : 192.168.1.57:8983_solr
+2021-11-24 11:53:11.135 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.0
+2021-11-24 11:53:11.136 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-24 11:53:11.138 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-24 11:53:11.146 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-24 11:53:11.146 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-24 11:53:11.147 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-24 11:53:11.147 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-24 11:53:11.147 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-24 11:53:11.186 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-24 11:53:11.216 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'companies_shard1_replica_n1' using configuration from configset companies, trusted=true
+2021-11-24 11:53:11.222 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.companies.shard1.replica_n1' (registry 'solr.core.companies.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-11-24 11:53:11.227 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SolrCore [[companies_shard1_replica_n1] ] Opening new SolrCore at [/Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/example/cloud/node1/solr/companies_shard1_replica_n1], dataDir=[/Users/alberma/Documents/GitHub/cse-crawler/indexer/solr-8.10.0/example/cloud/node1/solr/companies_shard1_replica_n1/data/]
+2021-11-24 11:53:11.524 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-24 11:53:11.524 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-24 11:53:11.536 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-24 11:53:11.536 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-11-24 11:53:11.681 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/companies
+2021-11-24 11:53:11.683 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/companies
+2021-11-24 11:53:11.684 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/companies/managed-schema
+2021-11-24 11:53:11.685 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 1 is already the latest
+2021-11-24 11:53:11.693 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-24 11:53:11.698 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-24 11:53:11.705 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-24 11:53:11.721 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.57:8983_solr x:companies_shard1_replica_n1 c:companies s:shard1 r:core_node3) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-24 11:53:11.721 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.57:8983_solr x:companies_shard1_replica_n1 c:companies s:shard1 r:core_node3) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-24 11:53:11.726 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.57:8983_solr x:companies_shard1_replica_n1 c:companies s:shard1 r:core_node3) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SolrCore [companies_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-24 11:53:11.835 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/companies/leaders/shard1
+2021-11-24 11:53:11.867 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-11-24 11:53:11.867 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-11-24 11:53:11.867 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SyncStrategy Sync replicas to http://192.168.1.57:8983/solr/companies_shard1_replica_n1/
+2021-11-24 11:53:11.869 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2021-11-24 11:53:11.870 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.SyncStrategy http://192.168.1.57:8983/solr/companies_shard1_replica_n1/ has no replicas
+2021-11-24 11:53:11.871 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/companies/leaders/shard1/leader after winning as /collections/companies/leader_elect/shard1/election/72063332435951616-core_node3-n_0000000001
+2021-11-24 11:53:11.901 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.1.57:8983/solr/companies_shard1_replica_n1/ shard1
+2021-11-24 11:53:11.907 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.57:8983_solr) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-11-24 11:53:12.065 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 11:53:12.065 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 11:53:12.065 INFO  (zkCallback-10-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 11:53:12.913 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 11:53:12.913 INFO  (zkCallback-10-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 11:53:12.913 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 11:53:31.950 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637754811889} status=0 QTime=0
+2021-11-24 11:53:31.953 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637754811890} status=0 QTime=3
+2021-11-24 11:53:31.962 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637754811890} status=0 QTime=3
+2021-11-24 11:53:31.993 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:32.013 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:32.023 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637754811890} status=0 QTime=3
+2021-11-24 11:53:36.752 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637754811889} status=0 QTime=0
+2021-11-24 11:53:36.754 INFO  (qtp932582590-93) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637754811890} status=0 QTime=2
+2021-11-24 11:53:36.755 INFO  (qtp932582590-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1637754811890} status=0 QTime=1
+2021-11-24 11:53:36.780 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:36.792 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1637754811890} status=0 QTime=2
+2021-11-24 11:53:36.802 INFO  (qtp932582590-93) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.57:7574_solr, 192.168.1.57:8983_solr]
+2021-11-24 11:53:36.802 INFO  (qtp932582590-93) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=192.168.1.57:7574_solr,192.168.1.57:8983_solr&wt=json&_=1637754811890} status=0 QTime=19
+2021-11-24 11:53:36.806 INFO  (qtp932582590-22) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 2 nodes: [192.168.1.57:7574_solr, 192.168.1.57:8983_solr]
+2021-11-24 11:53:36.809 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637754811890} status=0 QTime=1
+2021-11-24 11:53:36.820 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637754811890} status=0 QTime=1
+2021-11-24 11:53:38.736 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637754811889} status=0 QTime=0
+2021-11-24 11:53:38.738 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1637754811890} status=0 QTime=1
+2021-11-24 11:53:38.738 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637754811890} status=0 QTime=1
+2021-11-24 11:53:38.749 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:38.756 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:38.762 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:40.944 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637754811889} status=0 QTime=0
+2021-11-24 11:53:40.948 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637754811890} status=0 QTime=3
+2021-11-24 11:53:40.969 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:40.974 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:40.980 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:42.434 INFO  (qtp932582590-26) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-0&version=2&q=*:*&omitHeader=false&NOW=1637754822300&isShard=true&wt=javabin&_=1637754820926} hits=86 status=0 QTime=14
+2021-11-24 11:53:42.475 INFO  (qtp932582590-23) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637754820926} rid=-0 hits=159 status=0 QTime=176
+2021-11-24 11:53:42.506 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637754811889} status=0 QTime=0
+2021-11-24 11:53:42.511 INFO  (qtp932582590-23) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-1&version=2&q=*:*&omitHeader=false&NOW=1637754822507&isShard=true&wt=javabin&_=1637754820926} hits=86 status=0 QTime=1
+2021-11-24 11:53:42.514 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637754811890} status=0 QTime=7
+2021-11-24 11:53:42.521 INFO  (qtp932582590-27) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637754820926} rid=-1 hits=159 status=0 QTime=14
+2021-11-24 11:53:42.528 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:42.553 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:53:42.564 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637754811890} status=0 QTime=0
+2021-11-24 11:55:11.403 INFO  (AutoscalingActionExecutor-22-thread-1) [   ] o.a.s.c.a.ExecutePlanAction No operations to execute for event: {
+  "id":"4faa2b3f90ecT8qez16tf9mef9awqg6cqrsjm2",
+  "source":".auto_add_replicas",
+  "eventTime":87592288620780,
+  "eventType":"NODELOST",
+  "properties":{
+    "eventTimes":[
+      87592288620780,
+      87592288623045],
+    "preferredOperation":"movereplica",
+    "_enqueue_time_":87712712430539,
+    "nodeNames":[
+      "192.168.1.57:8984_solr",
+      "192.168.1.57:8985_solr"]}}
+2021-11-24 14:06:32.448 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637762792386} status=0 QTime=0
+2021-11-24 14:06:32.451 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637762792387} status=0 QTime=2
+2021-11-24 14:06:32.454 INFO  (qtp932582590-25) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-2&version=2&q=*:*&omitHeader=false&NOW=1637762792449&isShard=true&wt=javabin&_=1637762792433} hits=86 status=0 QTime=0
+2021-11-24 14:06:32.463 INFO  (qtp932582590-19) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637762792433} rid=-2 hits=159 status=0 QTime=14
+2021-11-24 14:06:32.494 INFO  (qtp932582590-102) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:06:32.518 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:06:32.527 INFO  (qtp932582590-102) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637762792387} status=0 QTime=1
+2021-11-24 14:06:40.586 INFO  (qtp932582590-27) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-3&version=2&q=*:*&omitHeader=false&NOW=1637762800583&isShard=true&wt=javabin&_=1637762792433} hits=86 status=0 QTime=0
+2021-11-24 14:06:40.593 INFO  (qtp932582590-19) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637762792433} rid=-3 hits=159 status=0 QTime=9
+2021-11-24 14:07:02.926 ERROR (qtp932582590-102) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'rating:[4.0]': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'rating:[4.0]': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 46 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 49 more
+
+2021-11-24 14:07:02.927 INFO  (qtp932582590-102) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=rating:[4.0]&indent=true&q.op=OR&_=1637762792433} rid=-4 status=400 QTime=1
+2021-11-24 14:07:02.967 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637762792386} status=0 QTime=0
+2021-11-24 14:07:02.969 ERROR (qtp932582590-20) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'rating:[4.0]': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'rating:[4.0]': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 46 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 49 more
+
+2021-11-24 14:07:02.969 INFO  (qtp932582590-20) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=rating:[4.0]&indent=true&q.op=OR&_=1637762792433} rid=-5 status=400 QTime=1
+2021-11-24 14:07:02.970 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637762792387} status=0 QTime=2
+2021-11-24 14:07:03.004 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:03.014 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:03.020 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:09.158 INFO  (qtp932582590-25) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-6&version=2&q=rating:4.0&omitHeader=false&NOW=1637762829145&isShard=true&wt=javabin&_=1637762792433} hits=7 status=0 QTime=6
+2021-11-24 14:07:09.169 INFO  (qtp932582590-26) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=rating:4.0&indent=true&q.op=OR&_=1637762792433} rid=-6 hits=18 status=0 QTime=24
+2021-11-24 14:07:09.202 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637762792386} status=0 QTime=0
+2021-11-24 14:07:09.205 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637762792387} status=0 QTime=2
+2021-11-24 14:07:09.205 INFO  (qtp932582590-20) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-7&version=2&q=rating:4.0&omitHeader=false&NOW=1637762829203&isShard=true&wt=javabin&_=1637762792433} hits=7 status=0 QTime=0
+2021-11-24 14:07:09.214 INFO  (qtp932582590-102) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=rating:4.0&indent=true&q.op=OR&_=1637762792433} rid=-7 hits=18 status=0 QTime=11
+2021-11-24 14:07:09.232 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:09.249 INFO  (qtp932582590-102) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:09.255 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:27.482 INFO  (qtp932582590-102) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637762792386} status=0 QTime=0
+2021-11-24 14:07:27.484 ERROR (qtp932582590-26) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'rating:[4.0]': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'rating:[4.0]': Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162)
+	... 46 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 11.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270)
+	... 49 more
+
+2021-11-24 14:07:27.484 INFO  (qtp932582590-26) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=rating:[4.0]&indent=true&q.op=OR&_=1637762792433} rid=-8 status=400 QTime=0
+2021-11-24 14:07:27.485 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637762792387} status=0 QTime=2
+2021-11-24 14:07:27.525 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:27.530 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:27.535 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:28.766 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637762792386} status=0 QTime=0
+2021-11-24 14:07:28.768 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637762792387} status=0 QTime=2
+2021-11-24 14:07:28.769 INFO  (qtp932582590-27) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.1.57:8983/solr/companies_shard1_replica_n1/&rows=10&rid=-9&version=2&q=*:*&omitHeader=false&NOW=1637762848766&isShard=true&wt=javabin&_=1637762792433} hits=86 status=0 QTime=0
+2021-11-24 14:07:28.777 INFO  (qtp932582590-19) [c:companies s:shard1 r:core_node3 x:companies_shard1_replica_n1] o.a.s.c.S.Request [companies_shard1_replica_n1]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637762792433} rid=-9 hits=159 status=0 QTime=11
+2021-11-24 14:07:28.790 INFO  (qtp932582590-102) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:28.810 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 14:07:28.815 INFO  (qtp932582590-102) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1637762792387} status=0 QTime=0
+2021-11-24 17:42:52.165 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4b2a01d4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-24 17:42:52.165 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-11-24 17:42:52.167 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=809128217
+2021-11-24 17:42:52.167 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.1.57:8983_solr
+2021-11-24 17:42:52.208 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-11-24 17:42:52.208 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.57:8983_solr as DOWN
+2021-11-24 17:42:52.238 INFO  (coreCloseExecutor-36-thread-1) [   ] o.a.s.c.SolrCore [companies_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@74867da1
+2021-11-24 17:42:52.238 INFO  (coreCloseExecutor-36-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.companies.shard1.replica_n1 tag=SolrCore@74867da1
+2021-11-24 17:42:52.238 INFO  (coreCloseExecutor-36-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@18d7e8be: rootName = null, domain = solr.core.companies.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.companies.shard1.replica_n1/com.codahale.metrics.MetricRegistry@4f48e524
+2021-11-24 17:42:52.245 INFO  (coreCloseExecutor-36-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.companies.shard1.leader tag=SolrCore@74867da1
+2021-11-24 17:42:52.248 INFO  (coreCloseExecutor-36-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-24 17:42:52.257 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-11-24 17:42:52.257 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@67e25252: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@31268ec9
+2021-11-24 17:42:52.259 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-11-24 17:42:52.259 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@682af059: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@1380c38
+2021-11-24 17:42:52.260 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-11-24 17:42:52.260 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5f36c8e3: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@217a4377
+2021-11-24 17:42:52.261 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-11-24 17:42:52.262 INFO  (closeThreadPool-38-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72063332435951616-192.168.1.57:8983_solr-n_0000000004) closing
+2021-11-24 17:42:52.262 INFO  (OverseerAutoScalingTriggerThread-72063332435951616-192.168.1.57:8983_solr-n_0000000004) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-11-24 17:42:52.262 INFO  (OverseerCollectionConfigSetProcessor-72063332435951616-192.168.1.57:8983_solr-n_0000000004) [   ] o.a.s.c.OverseerTaskProcessor According to ZK I (id=72063332435951616-192.168.1.57:8983_solr-n_0000000004) am no longer a leader. propsId=null
+2021-11-24 17:42:52.262 INFO  (OverseerStateUpdate-72063332435951616-192.168.1.57:8983_solr-n_0000000004) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.57:8983_solr
+2021-11-24 17:42:52.262 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 17:42:52.262 INFO  (zkCallback-10-thread-7) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 17:42:52.262 INFO  (closeThreadPool-38-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72063332435951616-192.168.1.57:8983_solr-n_0000000004) closing
+2021-11-24 17:42:52.262 INFO  (zkCallback-10-thread-8) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/companies/state.json] for collection [companies] has occurred - updating... (live nodes size: [2])
+2021-11-24 17:42:52.394 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72063332435951616-192.168.1.57:8983_solr-n_0000000004) closing

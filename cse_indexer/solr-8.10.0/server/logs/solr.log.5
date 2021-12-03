@@ -1,0 +1,117 @@
+2021-12-01 10:03:29.569 INFO  (main) [   ] o.e.j.u.log Logging initialized @978ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-01 10:03:29.773 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.41.v20210516; built: 2021-05-16T23:56:28.993Z; git: 98607f93c7833e7dc59489b13f3cb0a114fb9f4c; jvm 15.0.1+9-18
+2021-12-01 10:03:29.779 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/contexts/] at interval 0
+2021-12-01 10:03:30.002 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-12-01 10:03:30.010 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-12-01 10:03:30.010 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-12-01 10:03:30.013 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-12-01 10:03:30.080 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-12-01 10:03:30.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.0
+2021-12-01 10:03:30.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-12-01 10:03:30.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0
+2021-12-01 10:03:30.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-01T10:03:30.084625Z
+2021-12-01 10:03:30.096 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr
+2021-12-01 10:03:30.096 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/solr.xml
+2021-12-01 10:03:30.169 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418, but no JMX reporters were configured - adding default JMX reporter.
+2021-12-01 10:03:30.662 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-12-01 10:03:30.829 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7159a5cd[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:03:30.829 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7159a5cd[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:03:30.954 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3e15bb06[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:03:30.954 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3e15bb06[provider=null,keyStore=null,trustStore=null]
+2021-12-01 10:03:31.007 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-12-01 10:03:31.127 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-12-01 10:03:31.143 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-12-01 10:03:31.195 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:03:31.196 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:03:31.196 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:03:31.226 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr
+2021-12-01 10:03:31.226 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [companies]
+2021-12-01 10:03:31.249 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.0
+2021-12-01 10:03:31.277 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@73ff4fae{/solr,file:///Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr-webapp/webapp}
+2021-12-01 10:03:31.280 WARN  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-01 10:03:31.287 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4b2a01d4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-12-01 10:03:31.288 INFO  (main) [   ] o.e.j.s.Server Started @2697ms
+2021-12-01 10:03:31.314 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-01 10:03:31.526 WARN  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-12-01 10:03:31.526 WARN  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-12-01 10:03:31.526 WARN  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-12-01 10:03:31.526 WARN  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-12-01 10:03:31.526 WARN  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-12-01 10:03:31.626 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-01 10:03:31.650 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.c.CoreContainer Creating SolrCore 'companies' using configuration from instancedir /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies, trusted=true
+2021-12-01 10:03:31.671 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.companies' (registry 'solr.core.companies') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1ca3b418
+2021-12-01 10:03:31.683 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.c.SolrCore [[companies] ] Opening new SolrCore at [/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies], dataDir=[/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies/data/]
+2021-12-01 10:03:32.073 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-12-01 10:03:32.073 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-12-01 10:03:32.088 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-01 10:03:32.088 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-01 10:03:32.238 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr/companies/conf
+2021-12-01 10:03:32.247 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-01 10:03:32.251 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-01 10:03:32.260 INFO  (coreLoadExecutor-13-thread-1) [   x:companies] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-01 10:03:32.273 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-01 10:03:32.273 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-01 10:03:32.278 INFO  (searcherExecutor-15-thread-1-processing-x:companies) [   x:companies] o.a.s.c.SolrCore [companies]  Registered new searcher autowarm time: 0 ms
+2021-12-01 10:03:41.208 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=5
+2021-12-01 10:03:41.214 INFO  (qtp932582590-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=12
+2021-12-01 10:03:41.222 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=2
+2021-12-01 10:04:13.181 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:13.185 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=3
+2021-12-01 10:04:13.187 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638353021141&ts=1638353021141} status=503 QTime=1
+2021-12-01 10:04:13.188 INFO  (qtp932582590-25) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638353053175} status=0 QTime=5
+2021-12-01 10:04:13.190 INFO  (qtp932582590-43) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/system params={wt=json&_=1638353053174} status=0 QTime=4
+2021-12-01 10:04:13.191 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638353053174} status=0 QTime=9
+2021-12-01 10:04:21.539 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:21.544 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=4
+2021-12-01 10:04:21.545 INFO  (qtp932582590-27) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638353053174} status=0 QTime=5
+2021-12-01 10:04:27.394 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:27.395 INFO  (qtp932582590-26) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/file params={wt=json&_=1638353067389} status=0 QTime=0
+2021-12-01 10:04:27.397 INFO  (qtp932582590-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=2
+2021-12-01 10:04:27.404 INFO  (qtp932582590-21) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1638353067389} status=0 QTime=1
+2021-12-01 10:04:32.693 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:32.696 INFO  (qtp932582590-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=3
+2021-12-01 10:04:32.704 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1638353072689} status=0 QTime=11
+2021-12-01 10:04:34.311 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:34.315 INFO  (qtp932582590-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=4
+2021-12-01 10:04:34.927 INFO  (qtp932582590-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:34.928 INFO  (qtp932582590-43) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638353053175} status=0 QTime=1
+2021-12-01 10:04:34.930 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=3
+2021-12-01 10:04:35.576 INFO  (qtp932582590-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:35.578 INFO  (qtp932582590-23) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638353053174} status=0 QTime=1
+2021-12-01 10:04:35.579 INFO  (qtp932582590-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=2
+2021-12-01 10:04:35.580 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/config params={wt=json&_=1638353075565} status=0 QTime=3
+2021-12-01 10:04:35.638 INFO  (qtp932582590-44) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1638353053174} status=0 QTime=14
+2021-12-01 10:04:36.339 INFO  (qtp932582590-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:36.342 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=2
+2021-12-01 10:04:36.344 INFO  (qtp932582590-20) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/segments params={wt=json&_=1638353076334} status=0 QTime=4
+2021-12-01 10:04:37.903 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353021141} status=0 QTime=0
+2021-12-01 10:04:37.905 INFO  (qtp932582590-42) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638353053174} status=0 QTime=0
+2021-12-01 10:04:37.906 INFO  (qtp932582590-19) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/replication params={wt=json&command=details&_=1638353053175} status=0 QTime=1
+2021-12-01 10:04:37.907 INFO  (qtp932582590-20) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638353021141&ts=1638353021141} status=503 QTime=0
+2021-12-01 10:04:37.907 INFO  (qtp932582590-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353021141} status=0 QTime=3
+2021-12-01 10:04:37.910 INFO  (qtp932582590-22) [   x:companies] o.a.s.c.S.Request [companies]  webapp=/solr path=/admin/system params={wt=json&_=1638353053174} status=0 QTime=3
+2021-12-01 10:05:19.651 INFO  (qtp932582590-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1
+2021-12-01 10:05:19.667 INFO  (qtp932582590-25) [   x:companies] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.companies tag=null
+2021-12-01 10:05:19.667 INFO  (qtp932582590-25) [   x:companies] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@509a1766: rootName = null, domain = solr.core.companies, service url = null, agent id = null] for registry solr.core.companies/com.codahale.metrics.MetricRegistry@24a28cfd
+2021-12-01 10:05:19.677 INFO  (qtp932582590-25) [   ] o.a.s.c.SolrCore [companies]  CLOSING SolrCore org.apache.solr.core.SolrCore@767d064f
+2021-12-01 10:05:19.677 INFO  (qtp932582590-25) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.companies tag=SolrCore@767d064f
+2021-12-01 10:05:19.678 INFO  (qtp932582590-25) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-12-01 10:05:19.697 INFO  (qtp932582590-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=companies&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=31
+2021-12-01 10:05:25.091 INFO  (qtp932582590-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353125031} status=0 QTime=0
+2021-12-01 10:05:25.094 INFO  (qtp932582590-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353125031} status=0 QTime=3
+2021-12-01 10:05:26.450 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353126411} status=0 QTime=0
+2021-12-01 10:05:26.453 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353126411} status=0 QTime=2
+2021-12-01 10:05:26.675 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353126645} status=0 QTime=0
+2021-12-01 10:05:26.677 INFO  (qtp932582590-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353126645} status=0 QTime=2
+2021-12-01 10:05:26.956 INFO  (qtp932582590-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638353126927} status=0 QTime=0
+2021-12-01 10:05:26.958 INFO  (qtp932582590-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638353126927} status=0 QTime=2
+2021-12-01 10:05:33.312 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4b2a01d4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-12-01 10:05:33.312 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-12-01 10:05:33.313 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1899567935
+2021-12-01 10:05:33.316 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-12-01 10:05:33.316 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5a3a1bf9: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@65c8f6c7
+2021-12-01 10:05:33.319 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-12-01 10:05:33.319 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3ad85136: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@31268ec9
+2021-12-01 10:05:33.320 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-12-01 10:05:33.320 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@737d100a: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@1380c38
+2021-12-01 10:05:33.326 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@73ff4fae{/solr,null,STOPPED}{/Users/alberma/Desktop/cse/cse_indexer/solr-8.10.0/server/solr-webapp/webapp}
